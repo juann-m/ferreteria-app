@@ -1,0 +1,35 @@
+@idproducto=666
+
+@host=http://127.0.0.1:3001
+
+### Peticion del tipo GET  TEST 1 (ERROR ESPERADO)
+
+GET {{host}}/api/product/empanada/2
+
+
+### Peticion del tipo GET - TEST 2 (ÉXITO ESPERADO)
+
+GET {{host}}/api/product/empanada/a1b2c3d4
+
+### Peticion del tipo POST - TEST 3 (CREAR PRODUCTO)
+POST {{host}}/api/product
+Content-Type: application/json
+
+{
+  "nombre": "tuerca",
+  "descripcion": "Tuerca de metal",
+  "cantidad": 20,
+  "tags": ["gris", "rosca", "barato"]
+}
+
+### Peticion del tipo DELETE - TEST 4 (BORRAR PRODUCTO)
+DELETE {{host}}/api/product/{{idproducto}}
+
+### Peticion del tipo ACTUALIZAR - TEST 4 (ACTUALIZAR PRODUCTO)
+PATCH {{host}}/api/product/{{idproducto}}
+Content-Type: application/json
+
+{
+  "descripcion": "Cambio descripcion",
+  "cantidad": 10
+}

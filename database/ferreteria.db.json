@@ -1,0 +1,76 @@
+[
+  {
+    "id": "a1b2c3d4",
+    "nombre": "Martillo",
+    "descripcion": "Martillo de acero resistente",
+    "cantidad": 10,
+    "tags": [
+      "herramientas",
+      "construccion"
+    ]
+  },
+  {
+    "id": "f5e8d9c2",
+    "nombre": "Destornillador",
+    "descripcion": "Destornillador Phillips #2",
+    "cantidad": 15,
+    "tags": [
+      "herramientas",
+      "precision"
+    ]
+  },
+  {
+    "id": "b7a9e4f1",
+    "nombre": "Taladro",
+    "descripcion": "Taladro eléctrico 500W",
+    "cantidad": 5,
+    "tags": [
+      "herramientas",
+      "electrico"
+    ]
+  },
+  {
+    "id": "e07960fd",
+    "nombre": "tuerca",
+    "descripcion": "Tuerca de metal",
+    "cantidad": 20,
+    "tags": [
+      "gris",
+      "rosca",
+      "barato"
+    ]
+  },
+  {
+    "id": "9285d294",
+    "nombre": "tuerca",
+    "descripcion": "Tuerca de metal",
+    "cantidad": 20,
+    "tags": [
+      "gris",
+      "rosca",
+      "barato"
+    ]
+  },
+  {
+    "id": "51cce929",
+    "nombre": "tuerca",
+    "descripcion": "Tuerca de metal",
+    "cantidad": 20,
+    "tags": [
+      "gris",
+      "rosca",
+      "barato"
+    ]
+  },
+  {
+    "id": "666",
+    "nombre": "tuerca",
+    "descripcion": "Tuerca de metal",
+    "cantidad": 20,
+    "tags": [
+      "gris",
+      "rosca",
+      "barato"
+    ]
+  }
+]
