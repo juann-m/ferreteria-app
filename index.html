@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería App - Taller de Programación II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔨 Ferretería App</h1>
+            <p class="subtitle">Sistema de Gestión de Ferretería</p>
+            <div class="header-actions">
+                <button id="cartBtn" class="btn btn-primary">
+                    🛒 Carrito (<span id="cartCount">0</span>)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar productos..." />
+            </div>
+            <div class="filter-box">
+                <select id="categoryFilter">
+                    <option value="">Todas las categorías</option>
+                    <option value="herramientas">Herramientas</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="plomeria">Plomería</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="construccion">Construcción</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="productSection" class="product-section">
+            <h2>Catálogo de Productos</h2>
+            <div id="productList" class="product-grid"></div>
+        </section>
+
+        <section id="cartSection" class="cart-section" style="display: none;">
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-summary">
+                <h3>Total: $<span id="cartTotal">0</span></h3>
+                <button id="checkoutBtn" class="btn btn-success">Finalizar Compra</button>
+                <button id="closeCartBtn" class="btn btn-secondary">Volver al Catálogo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Ferretería App - Taller de Programación II</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
